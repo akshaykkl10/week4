@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutation and Resize Observer</title>
+    <script src="task6.js" defer></script>
+    <style>
+        .log {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 250px;
+            height: 250px;
+            background-color: antiquewhite;
+        }
+        article {
+            background-color: aliceblue;
+            border: 1px solid rgb(104, 184, 255);
+            transform: translateY(40px);
+            opacity: 0;
+            transition: transform 0.3s ease-out,
+                        opacity 0.3s ease-out;
+        }
+        .visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <form class="add-form">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title">
+        <label for="content">Content</label>
+        <input type="text" name="content" id="content">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="log">
+
+    </div>
+    <div class="feed">
+        <article>
+            <h1>hey there</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto in quis blanditiis neque et facere temporibus quidem ratione doloremque sint quisquam atque dicta, omnis dolorem incidunt perferendis, at ullam provident.</p>
+            <button class="del-btn">Delete</button>
+        </article>
+    </div>
+    <div class="chart-container">
+        <canvas id="chart">
+            
+        </canvas>
+    </div>
+</body>
+</html>
