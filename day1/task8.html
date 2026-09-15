@@ -15,6 +15,13 @@
             justify-content: center;
             align-items: center;
         }
+        #tooltip {
+            position: fixed;
+            display: none;
+            padding: 8px;
+            background: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -22,5 +29,6 @@
         <canvas id="sales-chart" width="1800" height="800"></canvas>
         <button id="download-chart">Download PNG</button>
     </div>
+    <div id="tooltip"></div>
 </body>
 </html>
