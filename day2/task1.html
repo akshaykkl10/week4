@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Steep</title>
+    <script src="task1.js" defer></script>
+</head>
+<body>
+    <form class="local-form">
+        <input type="text" name="message" id="message">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="local">
+
+    </div>
+    <form class="session-form">
+        <input type="text" name="message" id="message">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="session">
+
+    </div>
+    <h1>Storage Manager</h1>
+    <form class="storage">
+        <label for="key">Key</label>
+        <input type="text" name="key" id="key">
+        <label for="value">Value</label>
+        <input type="text" name="value" id="value">
+        <label for="ttl">Expiration</label>
+        <input type="number" name="ttl" id="ttl">
+        <button type="submit">Add</button>
+    </form>
+    <form class="storage-get">
+        <label for="key">Get key</label>
+        <input type="text" name="key" id="key">
+        <button type="submit">Get</button>
+    </form>
+
+    <form class="storage-del">
+        <label for="key">Del key</label>
+        <input type="text" name="key" id="key">
+        <button type="submit">Del</button>
+    </form>
+</body>
+</html>

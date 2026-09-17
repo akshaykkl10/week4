@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual scroll</title>
+    <script src="task4_1.js" defer></script>
+    <style>
+        #list-container {
+            height: 500px;
+            overflow-y: auto;
+            border: 1px solid black;
+        }
+
+        #list {
+            position: relative;
+            font-size:larger;
+        }
+        #visible-items {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .item {
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/200/300" alt="picsum pic" loading="lazy">
+    <video src="https://lorem.video/720p" autoplay controls></video>
+    <div id="list-container">
+        <div id="list">
+            <div id="visible-items"></div>
+        </div>
+    </div>
+</body>
+</html>

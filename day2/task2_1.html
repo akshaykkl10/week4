@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard</title>
+    <script src="task2_1.js" defer></script>
+    <style>
+        .code-block {
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .code-block pre {
+            border-bottom: 1px solid;
+            width: 100%;
+        }
+        .code-block button {
+            align-self: flex-end;
+            justify-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-block">
+        <pre>
+            <code>
+localForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const message = event.target.message.value;
+    if (localMessages.message){
+        localMessages.message.push(message);
+        localStorage.setItem("messages", JSON.stringify(localMessages.message));
+    }
+    event.target.message.value = "";
+    console.log(localMessages);
+});
+            </code>
+        </pre>
+        <button class="copy-button">Copy</button>
+    </div>
+    <div class="code-block">
+        <pre>
+            <code>
+sessionForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const message = event.target.message.value;
+    if (sessionMessages.message){
+        sessionMessages.message.push(message)
+        sessionStorage.setItem("messages", JSON.stringify(sessionMessages.message));
+    }
+    event.target.message.value = "";
+    console.log(sessionMessages);
+});
+            </code>
+        </pre>
+        <button class="copy-button">Copy</button>
+    </div>
+    <div class="code-block">
+        <pre>
+            <code>
+function renderSection(messages, section) {
+    messages.message.forEach(element => {
+        const p = document.createElement('h4');
+        p.textContent = element;
+        section.appendChild(p);
+    });
+}
+            </code>
+        </pre>
+        <button class="copy-button">Copy</button>
+    </div>
+    <div class="code-block">
+        <pre>
+            <code>
+const request = indexedDB.open("Portfolio",1);
+request.onupgradeneeded = (event) => {
+    const db = event.target.result;
+    db.createObjectStore(
+        "users",
+        {
+            keyPath: "id"
+        }
+    );
+}
+            </code>
+        </pre>
+        <button class="copy-button">Copy</button>
+    </div>
+</body>
+</html>

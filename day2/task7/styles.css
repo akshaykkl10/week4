@@ -1,0 +1,56 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header {
+    grid-column: span 3;
+    place-items: center;
+}
+
+.todo{
+    background-color: red;
+    height: 80vh;
+    place-items: center;
+}
+.inprogress {
+    background-color: blue;
+    height: 80vh;
+    place-items: center;
+}
+.done {
+    background-color: green;
+    height: 80vh;
+    place-items: center;
+}
+.task-card {
+    padding: 1rem;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px black;
+    height: max-content;
+}
+
+.drag-over {
+    outline: 5px solid rgb(106, 255, 0);
+    z-index: 10;
+}
+.todo,
+.inprogress,
+.done {
+    display: flex;
+    flex-direction: column;
+
+}
+.cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 90%;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));;
+    
+}
+.delete {
+    place-items: center;
+    grid-column: span 3;
+    background-color: gold;
+    height: 200px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance</title>
+    <script src="task8_2.js" defer></script>
+    <style>
+        .demo-container {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            border: 1px solid;
+        }
+
+        .demo-box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #left-box {
+            left: 0;
+            background: red;
+            /* will-change: left; */
+        }
+
+        #transform-box {
+            left: 0;
+            top: 150px;
+            background: green;
+            /* will-change: transform; */
+        }
+        #opacity-box {
+            top: 275px;
+            background: purple;
+            /* will-change: opacity; */
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+
+        <div id="left-box" class="demo-box">
+            left
+        </div>
+
+        <div id="transform-box" class="demo-box">
+            transform
+        </div>
+        <div id="opacity-box" class="demo-box">
+            opacity
+        </div>
+
+    </div>
+
+    <button id="performance-btn">
+        Run Performance Test
+    </button>
+</body>
+</html>
