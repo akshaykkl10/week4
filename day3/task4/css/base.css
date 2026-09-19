@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #08766c;
+    --color-secondary: #1858e4;
+    --color-accent: #003d55;
+    --color-success: #0d942f;
+    --color-warning: #cef010;
+    --color-error: #fc440c;
+    --color-text: #1f2937;
+    --color-bg: #f3f4f6;
+    --color-surface: #fff;
+    --color-border: #1d1d1e;
+}
+html[data-theme="dark"] {
+    --color-primary: #0d9488;
+    --color-secondary: #071d4b;
+    --color-accent: #003d55;
+    --color-success: #0d942f;
+    --color-warning: #cef010;
+    --color-error: #fc440c;
+    --color-text: #d9e0ea;
+    --color-bg: #2d2d2d;
+    --color-surface: #606060;
+    --color-border: #dce3ee;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial,  sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    max-width: 100%;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 5vw + 1rem, 5.6rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 3vw + 0.5rem, 4rem);
+}
+
+h3 {
+    font-size: clamp(1.8rem, 2vw + 0.5rem, 3rem);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+.hide {
+    display: none;
+}

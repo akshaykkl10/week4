@@ -1,8 +1,16 @@
 {
   "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint-plugin-vitest": "^0.5.4",
+    "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
     "vitest": "^4.1.11"
   },
   "scripts": {
-    "test": "vitest"
+    "type":"module",
+    "test": "vitest run --coverage",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "husky"
   }
 }

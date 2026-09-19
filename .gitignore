@@ -1,2 +1,4 @@
 .vitest/
 node_modules/
+coverage/
+.husky
