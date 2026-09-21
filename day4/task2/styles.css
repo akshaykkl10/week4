@@ -1,0 +1,11 @@
+#counter {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+}

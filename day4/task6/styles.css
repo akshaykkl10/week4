@@ -1,0 +1,21 @@
+.content {
+    width: 1200px;
+    max-width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    
+}
+.loader {
+    height: 50px;
+    width: 50px;
+    border: 7px solid ;
+    border-top: 7px solid rgb(194, 193, 193);
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite ;
+    display: none;
+}
+@keyframes spin {
+    to {
+        rotate: 360deg;
+    }
+}

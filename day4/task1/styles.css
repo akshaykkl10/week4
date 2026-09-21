@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#container {
+    width: 600px;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 4px;
+    background: steelblue;
+}

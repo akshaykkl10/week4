@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.chart-wrapper {
+    position: relative;
+    width: 900px;
+    max-width: 100%;
+}
+
+canvas {
+    width: 100%;
+    border: 1px solid #4e4b4b;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+
+    padding: 8px 12px;
+
+    background: #222;
+    color: white;
+
+    border-radius: 4px;
+
+    pointer-events: none;
+}
