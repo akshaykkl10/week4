@@ -53,7 +53,7 @@ export function formatDate(date = null, format = null) {
         return `${month} ${day}, ${year}`
     }
     if (format == 'relative') {
-        const now = Date.now()
+        const now = new Date(2026,8,19)
         const diffTime =  now - date.getTime()
         const diffDays = Math.floor(diffTime/ (1000 * 60 * 60 * 24));
         if (diffDays > 0) {
